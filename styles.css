@@ -76,6 +76,25 @@ header {
   height: 100%;
 }
 
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.works-title-section {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 49px;
+}
+
+.works-title {
+  font-size: 40px;
+  line-height: 52px;
+  height: 83px;
+}
+
 .social-media-icons {
   position: static;
   margin-top: 20px;
@@ -116,6 +135,10 @@ header {
 
 .text-white {
   color: #fff;
+}
+
+.text-black {
+  color: #1c1a19;
 }
 
 .font-crete-round {
