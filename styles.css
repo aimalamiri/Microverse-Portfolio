@@ -95,6 +95,59 @@ header {
   height: 83px;
 }
 
+.f-project-img {
+  width: 100%;
+  height: 237px;
+}
+
+.project-title {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: normal;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn {
+  padding: 12px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  background: #f55800;
+  color: #fff;
+  border: 1px solid #f56b00;
+}
+
+.btn:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.btn:active {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid #e05304;
+}
+
+.btn-disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #f4f1f0;
+}
+
+.btn-disabled:hover {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #f4f1f0;
+  cursor: not-allowed;
+}
+
 .social-media-icons {
   position: static;
   margin-top: 20px;
@@ -110,6 +163,22 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.tag {
+  border: 1px solid #8993a4;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Inter, sans-serif;
+  line-height: 20px;
+  list-style: none;
 }
 
 .container {
@@ -143,4 +212,8 @@ header {
 
 .font-crete-round {
   font-family: "Crete Round", serif;
+}
+
+.mt-12 {
+  margin-top: 12px;
 }
