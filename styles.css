@@ -151,6 +151,35 @@ header {
   margin-bottom: 136px;
 }
 
+.technologies {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.tech-title {
+  height: 41.46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.tech-title > h5 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.tech {
+  font-size: 22px;
+  line-height: 43px;
+  list-style: none;
+  text-align: center;
+  height: 48px;
+}
+
 .btn {
   padding: 12px;
   font-family: Inter, sans-serif;
