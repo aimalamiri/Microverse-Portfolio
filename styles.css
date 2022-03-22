@@ -300,6 +300,26 @@ header {
   position: absolute;
 }
 
+.footer-social-media-links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-social-media-links li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 13px;
+}
+
+.footer-line-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
 .dark-tag {
   background: rgba(255, 255, 255, 0.24);
 }
