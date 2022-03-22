@@ -250,6 +250,56 @@ header {
   list-style: none;
 }
 
+.contact-form-section {
+  padding: 120px 24px 124px 24px;
+}
+
+.contact-form-title-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-title {
+  width: 327px;
+  height: 216px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.contact-form {
+  height: 330px;
+  margin-top: 58px;
+  text-align: center;
+}
+
+.input-field {
+  height: 48px;
+  width: 100%;
+  padding: 15px 16px;
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.input-textarea {
+  height: 114px;
+  background-color: #fbf8f7;
+}
+
+.hide-label {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
 .dark-tag {
   background: rgba(255, 255, 255, 0.24);
 }
