@@ -400,6 +400,88 @@ header {
     position: absolute;
     flex-direction: column;
   }
+
+  .project-description {
+    font-size: 17px;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .works-title-section {
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 42px;
+    grid-column: 1 / 4;
+  }
+
+  .works-title-section div {
+    width: calc(100% - 339px);
+  }
+
+  .works-title {
+    width: 315px;
+    margin-right: 24px;
+    height: 52px;
+    color: #091e42;
+    font-weight: 400;
+  }
+
+  .featured-project {
+    display: flex;
+    grid-column: 1 / 4;
+  }
+
+  .f-project-img {
+    width: 648px;
+    height: 448px;
+    margin-right: 24px;
+  }
+
+  .f-project-body {
+    width: calc(100% - 648px);
+  }
+
+  .f-project-body > .project-title {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 0;
+    color: #091e42;
+  }
+
+  .f-project-body > .project-description {
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+  }
+
+  .tag {
+    color: #091e42;
+  }
+
+  .f-project-body > button {
+    margin-top: 24px;
+  }
+
+  .project {
+    height: 435px;
+  }
+
+  .works div:nth-child(n+4) {
+    height: 100%;
+  }
+
+  .works div:nth-child(3) .project > div {
+    display: none;
+  }
+
+  .project-card > button {
+    height: 58px;
+  }
 }
 
 .text-bold {
