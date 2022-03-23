@@ -532,6 +532,39 @@ header {
     text-align: left;
     margin-bottom: 11px;
   }
+
+  .contact-form-section {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 130px;
+    padding-bottom: 152px;
+  }
+
+  .contact-form-title-section {
+    width: 455px;
+    height: 256px;
+  }
+
+  .contact-form-title {
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: left;
+    width: 100%;
+  }
+
+  .contact-form {
+    height: 330px;
+    width: auto;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .footer-line-section {
+    display: none;
+  }
 }
 
 .text-bold {
