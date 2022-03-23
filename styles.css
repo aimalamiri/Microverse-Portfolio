@@ -482,6 +482,56 @@ header {
   .project-card > button {
     height: 58px;
   }
+  
+  .about {
+    background-color: #262626;
+    padding-bottom: 116px;
+  }
+
+  .about-intro {
+    background-size: 672px 352px;
+    background-position: center right;
+    padding-bottom: 131.2px;
+  }
+
+  .about-intro > .container {
+    width: calc(566px + 308px);
+  }
+
+  .about-title {
+    font-size: 72px;
+    line-height: 81px;
+    height: 78px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .about-intro > .container > p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f4f4 !important;
+    font-weight: normal;
+  }
+
+  .footer-technologies {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .technologies {
+    width: 282px;
+  }
+
+  .tech-title {
+    text-align: left;
+    justify-content: start;
+    margin-bottom: 25px;
+  }
+
+  .tech {
+    text-align: left;
+    margin-bottom: 11px;
+  }
 }
 
 .text-bold {
