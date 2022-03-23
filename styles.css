@@ -364,6 +364,42 @@ header {
     line-height: 20px;
     font-family: Roboto, sans-serif;
   }
+
+  .header {
+    background-position: top right;
+    background-size: auto;
+    height: 870px;
+  }
+
+  .header-title {
+    font-size: 72px;
+    line-height: 81px;
+    width: 400px;
+  }
+
+  .header-subtitle {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 0;
+    width: 566px;
+  }
+
+  .header-text {
+    font-size: 1.3rem;
+    line-height: 32px;
+    width: 566px;
+  }
+
+  .header-content {
+    position: static;
+    margin: 192px 0;
+  }
+
+  .social-media-links {
+    top: 351px;
+    position: absolute;
+    flex-direction: column;
+  }
 }
 
 .text-bold {
