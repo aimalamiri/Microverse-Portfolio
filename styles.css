@@ -136,8 +136,16 @@ header {
   background-image: url("./assets/png/art\ printing.png");
   background-position: top left;
   background-size: cover;
-  padding: 16px;
   background-blend-mode: darken;
+}
+
+.project > div {
+  background: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.3));
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .about {
@@ -609,8 +617,4 @@ header {
 
 .mb-6 {
   margin-bottom: 6px;
-}
-
-.decoration-none {
-  text-decoration: none;
 }
