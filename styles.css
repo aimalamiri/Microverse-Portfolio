@@ -471,18 +471,18 @@ header {
     height: 435px;
   }
 
-  .works div:nth-child(n+4) {
+  .works div:nth-child(n + 4) {
     height: 100%;
   }
 
-  .works div:nth-child(3) .project > div {
+  .project:hover div {
     display: none;
   }
 
   .project-card > button {
     height: 58px;
   }
-  
+
   .about {
     background-color: #262626;
     padding-bottom: 116px;
