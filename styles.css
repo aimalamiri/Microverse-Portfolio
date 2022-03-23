@@ -31,6 +31,23 @@ nav {
   color: #fff;
 }
 
+.navbar-menu {
+  display: none;
+}
+
+.navbar-link {
+  list-style: none;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 12px;
+}
+
+.navbar-link a:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
 header {
   background-size: 256px;
   height: 660px;
@@ -329,6 +346,26 @@ header {
   padding-right: 24px;
 }
 
+@media screen and (min-width: 1100px) {
+  .container {
+    padding: 0 154px;
+  }
+
+  .navbar-menu {
+    display: flex;
+  }
+
+  .navbar-menu-button {
+    display: none;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Roboto, sans-serif;
+  }
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -371,4 +408,8 @@ header {
 
 .mb-6 {
   margin-bottom: 6px;
+}
+
+.decoration-none {
+  text-decoration: none;
 }
