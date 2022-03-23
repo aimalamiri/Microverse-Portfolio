@@ -31,6 +31,23 @@ nav {
   color: #fff;
 }
 
+.navbar-menu {
+  display: none;
+}
+
+.navbar-link {
+  list-style: none;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 12px;
+}
+
+.navbar-link a:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
 header {
   background-size: 256px;
   height: 660px;
@@ -119,8 +136,16 @@ header {
   background-image: url("./assets/png/art\ printing.png");
   background-position: top left;
   background-size: cover;
-  padding: 16px;
   background-blend-mode: darken;
+}
+
+.project > div {
+  background: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.3));
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .about {
@@ -327,6 +352,227 @@ header {
 .container {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    padding: 0 154px;
+  }
+
+  .navbar-menu {
+    display: flex;
+  }
+
+  .navbar-menu-button {
+    display: none;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Roboto, sans-serif;
+  }
+
+  .header {
+    background-position: top right;
+    background-size: auto;
+    height: 870px;
+  }
+
+  .header-title {
+    font-size: 72px;
+    line-height: 81px;
+    width: 400px;
+  }
+
+  .header-subtitle {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 0;
+    width: 566px;
+  }
+
+  .header-text {
+    font-size: 1.3rem;
+    line-height: 32px;
+    width: 566px;
+  }
+
+  .header-content {
+    position: static;
+    margin: 192px 0;
+  }
+
+  .social-media-icons {
+    top: 351px;
+    position: absolute;
+    flex-direction: column;
+  }
+
+  .project-description {
+    font-size: 17px;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .works-title-section {
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 42px;
+    grid-column: 1 / 4;
+  }
+
+  .works-title-section div {
+    width: calc(100% - 339px);
+  }
+
+  .works-title {
+    width: 315px;
+    margin-right: 24px;
+    height: 52px;
+    color: #091e42;
+    font-weight: 400;
+  }
+
+  .featured-project {
+    display: flex;
+    grid-column: 1 / 4;
+  }
+
+  .f-project-img {
+    width: 648px;
+    height: 448px;
+    margin-right: 24px;
+  }
+
+  .f-project-body {
+    width: calc(100% - 648px);
+  }
+
+  .f-project-body > .project-title {
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 0;
+    color: #091e42;
+  }
+
+  .f-project-body > .project-description {
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+  }
+
+  .tag {
+    color: #091e42;
+  }
+
+  .f-project-body > button {
+    margin-top: 24px;
+  }
+
+  .project {
+    height: 435px;
+  }
+
+  .works div:nth-child(n + 4) {
+    height: 100%;
+  }
+
+  .project:hover div {
+    display: none;
+  }
+
+  .project-card > button {
+    height: 58px;
+  }
+
+  .about {
+    background-color: #262626;
+    padding-bottom: 116px;
+  }
+
+  .about-intro {
+    background-size: 672px 352px;
+    background-position: center right;
+    padding-bottom: 131.2px;
+  }
+
+  .about-intro > .container {
+    width: calc(566px + 308px);
+  }
+
+  .about-title {
+    font-size: 72px;
+    line-height: 81px;
+    height: 78px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .about-intro > .container > p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f4f4 !important;
+    font-weight: normal;
+  }
+
+  .footer-technologies {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .technologies {
+    width: 282px;
+  }
+
+  .tech-title {
+    text-align: left;
+    justify-content: start;
+    margin-bottom: 25px;
+  }
+
+  .tech {
+    text-align: left;
+    margin-bottom: 11px;
+  }
+
+  .contact-form-section {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 130px;
+    padding-bottom: 152px;
+  }
+
+  .contact-form-title-section {
+    width: 455px;
+    height: 256px;
+  }
+
+  .contact-form-title {
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: left;
+    width: 100%;
+  }
+
+  .contact-form {
+    height: 330px;
+    width: auto;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .footer-line-section {
+    display: none;
+  }
 }
 
 .text-bold {

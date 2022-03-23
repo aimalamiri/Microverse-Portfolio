@@ -8,17 +8,33 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="container">
-      <a href="#" class="navbar-logo font-inter text-bold decoration-none"> Aimal Amiri </a>
-      <a href="#" class="navbar-menu-button">
-        <img src="./assets/svg/menu.svg" alt="Menu" />
-      </a>
+      <a href="#" class="navbar-logo font-inter text-bold decoration-none">Aimal Amiri</a>
+      <ul class="navbar-menu">
+        <li class="navbar-link font-inter">
+          <a href="#" class="text-white decoration-none">Portfolio</a>
+        </li>
+        <li class="navbar-link font-inter">
+          <a href="#" class="text-white decoration-none">About</a>
+        </li>
+        <li class="navbar-link font-inter">
+          <a href="#" class="text-white decoration-none">Contact</a>
+        </li>
+        <li class="navbar-link font-inter">
+          <a href="#" class="text-white decoration-none">
+            <img src="./assets/svg/mail.svg" alt="Email" class="text-white" />
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="navbar-menu-button"><img src="./assets/svg/menu.svg" alt="Menu" /></a>
     </nav>
-    <header class="header container">
-      <section class="header-content">
+    <header class="header">
+      <section class="header-content container">
         <h1 class="header-title font-crete-round text-orange">Hey There. I'm Aimal</h1>
         <h2 class="header-subtitle text-white font-inter">I’m a Software Developer</h2>
         <p class="header-text text-white font-inter text-shadow">
@@ -233,58 +249,77 @@
         </div>
       </section>
       <section class="contact-form-section container">
-      <div class="contact-form-title-section">
-        <h4 class="contact-form-title font-inter">
-          I'm always interested in hearing about new projects, so if you'd
-          like to chat please get in touch.
-        </h4>
-      </div>
-      <form action="https://formspree.io/f/mzborevw" method="post" class="contact-form">
-        <label class="hide-label" for="name">Full Name</label>
-        <input type="text" name="name" class="input-field font-inter" id="name" placeholder="Full name" maxlength="30"
-          required />
-        <label class="hide-label" for="email">Email Address</label>
-        <input type="email" name="email" class="input-field font-inter mt-24" id="email" placeholder="Email address"
-          required />
-        <label class="hide-label" for="message">Your message</label>
-        <textarea name="message" class="input-field input-textarea font-inter mt-24" id="message" maxlength="500"
-          required>Enter text here</textarea>
-        <button class="btn mt-24">Get in touch</button>
-      </form>
-    </section>
-    <hr/>
-    <footer>
-      <ul class="footer-social-media-links">
-        <li>
-          <a href="#" class="footer-social-media-icon">
-            <img src="assets/svg/github.svg" alt="Github icon" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social-media-icon">
-            <img src="assets/svg/linkedin.svg" alt="Linkedin icon" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social-media-icon">
-            <img src="assets/svg/angel-list.svg" alt="Angel List icon" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social-media-icon">
-            <img src="assets/svg/twitter.svg" alt="Twitter icon" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="footer-social-media-icon">
-            <img src="assets/svg/medium.svg" alt="Medium Icon" />
-          </a>
-        </li>
-      </ul>
-      <div class="footer-line-section">
-        <img src="assets/png/footer-line-shape.png" alt="Footer Line Shape">
-      </div>
-    </footer>
+        <div class="contact-form-title-section">
+          <h4 class="contact-form-title font-inter">
+            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+          </h4>
+        </div>
+        <form action="https://formspree.io/f/mzborevw" method="post" class="contact-form">
+          <label class="hide-label" for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            class="input-field font-inter"
+            id="name"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          />
+          <label class="hide-label" for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            class="input-field font-inter mt-24"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <label class="hide-label" for="message">Your message</label>
+          <textarea
+            name="message"
+            class="input-field input-textarea font-inter mt-24"
+            id="message"
+            maxlength="500"
+            required
+          >
+Enter text here</textarea
+          >
+          <button class="btn mt-24">Get in touch</button>
+        </form>
+      </section>
+      <hr />
+      <footer>
+        <ul class="footer-social-media-links">
+          <li>
+            <a href="#" class="footer-social-media-icon">
+              <img src="assets/svg/github.svg" alt="Github icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-social-media-icon">
+              <img src="assets/svg/linkedin.svg" alt="Linkedin icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-social-media-icon">
+              <img src="assets/svg/angel-list.svg" alt="Angel List icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-social-media-icon">
+              <img src="assets/svg/twitter.svg" alt="Twitter icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-social-media-icon">
+              <img src="assets/svg/medium.svg" alt="Medium Icon" />
+            </a>
+          </li>
+        </ul>
+        <div class="footer-line-section">
+          <img src="assets/png/footer-line-shape.png" alt="Footer Line Shape" />
+        </div>
+      </footer>
     </main>
   </body>
 </html>
