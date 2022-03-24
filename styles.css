@@ -259,6 +259,12 @@ header {
   align-items: center;
 }
 
+.social-media-link:hover {
+  background-color: #e05304;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -383,6 +389,18 @@ header {
     font-size: 72px;
     line-height: 81px;
     width: 400px;
+    animation-name: title-animation;
+    animation-duration: 4s;
+  }
+
+  @keyframes title-animation {
+    from {
+      margin-left: -200px;
+    }
+
+    to {
+      margin-left: 0;
+    }
   }
 
   .header-subtitle {
