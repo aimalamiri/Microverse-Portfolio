@@ -397,8 +397,9 @@ header {
     from {
       margin-left: -200px;
     }
+
     to {
-      margin-left: 0px;
+      margin-left: 0;
     }
   }
 
