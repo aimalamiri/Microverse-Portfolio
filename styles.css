@@ -389,6 +389,17 @@ header {
     font-size: 72px;
     line-height: 81px;
     width: 400px;
+    animation-name: title-animation;
+    animation-duration: 4s;
+  }
+
+  @keyframes title-animation {
+    from {
+      margin-left: -200px;
+    }
+    to {
+      margin-left: 0px;
+    }
   }
 
   .header-subtitle {
