@@ -259,6 +259,12 @@ header {
   align-items: center;
 }
 
+.social-media-link:hover {
+  background-color: #e05304;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
