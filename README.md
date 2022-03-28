@@ -4,10 +4,25 @@
 
 > This is my my portofolio website.
 
+### Screen Shots
+
+1. The desktop version
+
+![Desktop version screenshot](./assets/jpeg/desktop-version.jpeg)
+
+2. The mobile version
+
+![Mobile version screenshot](./assets/jpeg/mobile-version.jpeg)
+
 ## Built With
 
 - HTML 5
 - CSS 3
+
+## Live Demo 
+
+You can check the live demo [here](https://aimalamiri.github.io/Microverse-Portfolio/).
+
 
 ## Getting Started
 
