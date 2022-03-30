@@ -4,6 +4,9 @@
 
 > This is my my portofolio website.
 
+This project is following the W3C [Accessibility Principles](https://www.w3.org/WAI/fundamentals/accessibility-intro/), so it is accessible for everyone ✔
+
+
 ### Screen Shots
 
 1. The desktop version

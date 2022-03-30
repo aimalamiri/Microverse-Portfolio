@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aimal Amiri</title>
+    <title>Aimal Amiri's Portfolio</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet" />
@@ -17,13 +17,13 @@
       <a href="#" class="navbar-logo font-inter text-bold decoration-none">Aimal Amiri</a>
       <ul class="navbar-menu">
         <li class="navbar-link font-inter">
-          <a href="#" class="text-white decoration-none">Portfolio</a>
+          <a href="#works" class="text-white decoration-none">Portfolio</a>
         </li>
         <li class="navbar-link font-inter">
-          <a href="#" class="text-white decoration-none">About</a>
+          <a href="#about" class="text-white decoration-none">About</a>
         </li>
         <li class="navbar-link font-inter">
-          <a href="#" class="text-white decoration-none">Contact</a>
+          <a href="#contact" class="text-white decoration-none">Contact</a>
         </li>
         <li class="navbar-link font-inter">
           <a href="#" class="text-white decoration-none">
@@ -44,34 +44,34 @@
         <ul class="social-media-icons">
           <li>
             <a href="#" class="social-media-link">
-              <img src="assets/svg/github.svg" alt="" />
+              <img src="assets/svg/github.svg" alt="GitHub Icon" />
             </a>
           </li>
           <li>
             <a href="#" class="social-media-link">
-              <img src="assets/svg/linkedin.svg" alt="" />
+              <img src="assets/svg/linkedin.svg" alt="LinkedIn Icon" />
             </a>
           </li>
           <li>
             <a href="#" class="social-media-link">
-              <img src="assets/svg/angel-list.svg" alt="" />
+              <img src="assets/svg/angel-list.svg" alt="Angel List Icon" />
             </a>
           </li>
           <li>
             <a href="#" class="social-media-link">
-              <img src="assets/svg/twitter.svg" alt="" />
+              <img src="assets/svg/twitter.svg" alt="Twitter Icon" />
             </a>
           </li>
           <li>
             <a href="#" class="social-media-link">
-              <img src="assets/svg/medium.svg" alt="" />
+              <img src="assets/svg/medium.svg" alt="Medium Icon" />
             </a>
           </li>
         </ul>
       </section>
     </header>
     <main>
-      <section class="works container">
+      <section class="works container" id="works">
         <div class="works-title-section">
           <h2 class="works-title text-black font-crete-round">My Recent Works</h2>
           <div>
@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="featured-project">
-          <img class="f-project-img" src="./assets/png/gimfit.png"/>
+          <img class="f-project-img" src="./assets/png/gimfit.png" alt="GymFit's homepage" />
           <div class="f-project-body">
             <h3 class="project-title text-black font-crete-round my-24">Multi-Post Stories</h3>
             <p class="project-description font-inter text-black">
@@ -198,7 +198,7 @@
           <button class="btn w-full">See Project</button>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-intro">
           <div class="container">
             <h4 class="about-title font-crete-round text-orange">About me</h4>
@@ -225,7 +225,7 @@
             </ul>
             <ul class="technologies font-inter">
               <li class="tech-title">
-                <img src="assets/svg/frameworks.svg" />
+                <img src="assets/svg/frameworks.svg" alt="" />
                 <h5 class="text-white">Frameworks</h5>
               </li>
               <li class="tech text-white font-inter">Bootstrap</li>
@@ -248,13 +248,14 @@
           </div>
         </div>
       </section>
-      <section class="contact-form-section container">
+      <section class="contact-form-section container" id="contact">
         <div class="contact-form-title-section">
           <h4 class="contact-form-title font-inter">
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
           </h4>
         </div>
         <form action="https://formspree.io/f/mzborevw" method="post" class="contact-form">
+          <label class="hide-label" for="name">Full Name</label>
           <input
             type="text"
             name="name"
@@ -264,6 +265,7 @@
             maxlength="30"
             required
           />
+          <label class="hide-label" for="email">Email Address</label>
           <input
             type="email"
             name="email"
@@ -272,6 +274,7 @@
             placeholder="Email address"
             required
           />
+          <label class="hide-label" for="message">Your message</label>
           <textarea
             name="message"
             class="input-field input-textarea font-inter mt-24"
