@@ -28,7 +28,7 @@ nav {
 .navbar-menu {
   display: none;
   z-index: 10;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   position: absolute;
   width: 100%;
   left: 0;
@@ -47,10 +47,6 @@ nav {
   margin: 0 24px;
   padding: 15px;
   border-bottom: solid 1px #6f6c6b;
-}
-
-.navbar-menu li:last-child {
-  display: none;
 }
 
 .navbar-link a:hover {
@@ -359,6 +355,10 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 8px;
+}
+
+.navbar-menu li:last-child {
+  display: none;
 }
 
 .dark-tag {
