@@ -27,14 +27,30 @@ nav {
 
 .navbar-menu {
   display: none;
+  z-index: 10;
+  background-color: #3C3A39;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  font-size: 32px;
+  line-height: 44px;
+  top: 72px;
+  height: 755px;
 }
 
 .navbar-link {
   list-style: none;
-  line-height: 20px;
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0 12px;
+  line-height: 44px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff5e1;
+  margin: 0 24px;
+  padding: 15px;
+  border-bottom: solid 1px #6f6c6b;
+}
+
+.navbar-menu li:last-child {
+  display: none;
 }
 
 .navbar-link a:hover {
@@ -361,6 +377,25 @@ header {
 
   .navbar-menu {
     display: flex;
+    background-color: inherit;
+    position: relative;
+    width: auto;
+    top: inherit;
+    height: 26px;
+  }
+
+  .navbar-link {
+    list-style: none;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 12px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .navbar-menu li:last-child {
+    display: block;
   }
 
   .navbar-menu-button {
@@ -629,4 +664,8 @@ header {
 
 .mb-6 {
   margin-bottom: 6px;
+}
+
+.d-block {
+  display: block !important;
 }
