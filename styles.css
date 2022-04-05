@@ -368,6 +368,53 @@ header {
   background: rgba(255, 255, 255, 0.24);
 }
 
+.modal {
+  background-color: rgba(60, 60, 60, 0.24);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding: 60px 16px;
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background-color: #fff; 
+  padding: 16px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto, sans-serif;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  min-height: 82px;
+  margin-bottom: 12px;
+  color: #344563;
+}
+
+.modal-body img {
+  margin: 24px 0;
+}
+
+.modal-body p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.modal-caption .btn {
+  height: 48px;
+}
+
 .container {
   padding-left: 24px;
   padding-right: 24px;
@@ -673,6 +720,30 @@ header {
   margin-bottom: 6px;
 }
 
+.ml-16 {
+  margin-left: 16px;
+}
+
 .d-block {
   display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-hide {
+  display: none;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-16 {
+  gap: 16px;
 }

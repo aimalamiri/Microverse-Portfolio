@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aimal Amiri's Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
@@ -31,7 +31,9 @@
           </a>
         </li>
       </ul>
-      <a href="#" class="navbar-menu-button" id="menu-btn"><img src="./assets/svg/menu.svg" id="menu-icon" alt="Menu" /></a>
+      <a href="#" class="navbar-menu-button" id="menu-btn"
+        ><img src="./assets/svg/menu.svg" id="menu-icon" alt="Menu"
+      /></a>
     </nav>
     <header class="header">
       <section class="header-content container">
@@ -71,6 +73,39 @@
       </section>
     </header>
     <main>
+      <div id="project-modal" class="modal d-hide">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Multi Post Stories</h3>
+            <a href="#" class="modal-close">
+              <img src="assets/png/close.png" alt="Close Icon" />
+            </a>
+          </div>
+          <div class="modal-body d-block">
+            <ul class="tags">
+              <li class="tag">CSS</li>
+              <li class="tag">HTML</li>
+              <li class="tag">Bootstrap</li>
+            </ul>
+            <img
+              class="modal-image"
+              src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1102&q=80"
+              alt=""
+              width="100%"
+            />
+            <p class="modal-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
+            <div class="modal-caption d-flex space-between mt-24">
+              <button class="btn d-flex space-between items-center gap-16">See Live <img style="fill: #ccc;" src="./assets/svg/see-live.svg" /></button>
+              <button class="btn ml-16 d-flex space-between items-center gap-16">See Source <img src="./assets/svg/github.svg" /></button>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="works container" id="works">
         <div class="works-title-section">
           <h2 class="works-title text-black font-crete-round">My Recent Works</h2>
