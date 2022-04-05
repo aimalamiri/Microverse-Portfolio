@@ -43,10 +43,13 @@ nav {
   line-height: 44px;
   font-size: 32px;
   font-weight: 700;
-  color: #fff5e1;
   margin: 0 24px;
   padding: 15px;
   border-bottom: solid 1px #6f6c6b;
+}
+
+.navbar-link a {
+  color: #fff5e1;
 }
 
 .navbar-link a:hover {
@@ -392,6 +395,10 @@ header {
     margin: 0 12px;
     padding: 0;
     border-bottom: none;
+  }
+
+  .navbar-link a {
+    color: #fff;
   }
 
   .navbar-menu li:last-child {
