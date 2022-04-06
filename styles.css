@@ -142,7 +142,6 @@ header {
   width: 100%;
   height: calc(386px - 50px);
   background: #888;
-  background-image: url("./assets/png/art\ printing.png");
   background-position: top left;
   background-size: cover;
   background-blend-mode: darken;
