@@ -65,7 +65,7 @@ header {
   display: flex;
   background-repeat: no-repeat;
   background-position: bottom right -110px;
-  background-image: url("./assets/png/header-illustration.png");
+  background-image: url('./assets/png/header-illustration.png');
 }
 
 .header-content {
@@ -166,7 +166,7 @@ header {
   width: 100%;
   padding-top: 120px;
   padding-bottom: 209px;
-  background-image: url("assets/png/illustration-about-me.png");
+  background-image: url('assets/png/illustration-about-me.png');
   background-repeat: no-repeat;
   background-size: 493px 258px;
   background-position: bottom right -305px;
@@ -384,9 +384,9 @@ header {
 }
 
 .modal-content {
-  background-color: #fff; 
-  padding: 16px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 24px 24px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .modal-header {
@@ -399,15 +399,11 @@ header {
   line-height: 44px;
   min-height: 82px;
   margin-bottom: 12px;
-  color: #344563;
-}
-
-.modal-content {
-  padding: 24px;
 }
 
 .modal-image {
   margin: 24px 0;
+  width: 100%;
 }
 
 .modal-body p {
@@ -530,10 +526,10 @@ header {
     max-width: 1156px;
   }
 
-  .modal-image{
+  .modal-image {
     width: 50%;
     max-height: 60%;
-    margin: 0px;
+    margin: 0;
   }
 
   .modal-body-content {
@@ -542,7 +538,6 @@ header {
     justify-content: space-between;
     padding: 40px 0;
     overflow-y: auto;
-    padding-bottom: ;
   }
 
   .modal-body-description {
@@ -746,7 +741,7 @@ header {
 }
 
 .font-crete-round {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
 }
 
 .w-full {

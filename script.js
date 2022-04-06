@@ -5,9 +5,7 @@ const navLinks = document.querySelectorAll('.navbar-link a');
 const seeProjectBtn = document.querySelectorAll('.see-project-btn');
 const works = document.querySelector('#works');
 const projectModal = document.querySelector('#project-modal');
-const modalPro = document.querySelector('.modal');
 const modalClose = document.querySelector('#modal-close');
-
 
 const projects = [
   {
@@ -91,7 +89,8 @@ let fTags = '';
 projects[0].technologies.forEach((tag) => {
   fTags += `<li class="tag">${tag}</li>`;
 });
-let featureProject = `
+
+const featureProject = `
           <div class="featured-project">
           <img class="f-project-img" src="${projects[0].image}" alt="GymFit's homepage" />
           <div class="f-project-body">
@@ -107,15 +106,15 @@ let featureProject = `
         </div>
 `;
 
-works.innerHTML = works.innerHTML + featureProject;
+works.innerHTML += featureProject;
 
-for (let i = 1; i < projects.length; i++) {
+for (let i = 1; i < projects.length; i += 1) {
   let tags = '';
   projects[i].technologies.forEach((tag) => {
     tags += `<li class="tag text-white dark-tag mb-6">${tag}</li>`;
   });
 
-  let project = `
+  const project = `
         <div class="project-card">
           <div class="project" style="background-image: url('${projects[i].image}');">
             <div>
@@ -131,7 +130,7 @@ for (let i = 1; i < projects.length; i++) {
           <button class="btn see-project-btn w-full" data-id="${projects[i].id}">See Project</button>
         </div>
   `;
-  works.innerHTML = works.innerHTML + project;
+  works.innerHTML += project;
 }
 
 function swapMenuIcon() {
@@ -158,62 +157,58 @@ for (let i = 0; i < seeProjectBtn.length; i += 1) {
   seeProjectBtn[i].addEventListener('click', () => {
     document.querySelector('body').style.overflowY = 'hidden';
     projectModal.classList.toggle('d-hide');
-    projectModal.style.top = window.pageYOffset + 'px';
+    projectModal.style.top = `${window.pageYOffset}px`;
   });
 }
 
-modalClose.addEventListener('click', () => {
+modalClose.addEventListener('click', (event) => {
   projectModal.classList.add('d-hide');
   document.querySelector('body').style.overflowY = 'auto';
+  event.preventDefault();
 });
 
-window.addEventListener('load', () => {
-  const projectBtns = document.querySelectorAll('[data-id]');
-  for (let i = 0; i < projectBtns.length; i += 1) {
-    projectBtns[i].addEventListener('click', (btn) => {
-      let id = btn.target.getAttribute('data-id');
-      updateModal(findProject(id));
-      document.querySelector('body').style.overflowY = 'hidden';
-      projectModal.classList.toggle('d-hide');
-      projectModal.style.top = window.pageYOffset + 'px';
-    });
-  }
-
-})
-
-function findProject(id){
-
-  for(let project in projects){
-    if(projects[project].id == id){
-      return projects[project];
+function findProject(id) {
+  for (let i = 0; i < projects.length; i += 1) {
+    if (projects[i].id === Number(id)) {
+      return projects[i];
     }
   }
   return null;
 }
 
-function updateModal(project){
-const Title = document.querySelector('#modal-title');
-const Img = document.querySelector('#modal-img');
-const Tags = document.querySelector('#modal-tags');
-const Text = document.querySelector('#modal-text');
-const Live = document.querySelector('#modal-live');
-const Source = document.querySelector('#modal-source');
-
-Title.textContent= project.name;
-Img.src= project.image;
-Tags.innerHTML = produceTags(project);
-Text.textContent = project.description;
-Live.href= project.link;
-Source.href =project.source;
-  
-}
-
-function produceTags(project){
+function produceTags(project) {
   let tags = '';
-  for (let i = 1; i < project.length; i++) {
-    project.technologies.forEach((tag) => {
-      tags += `<li class="tag text-white dark-tag mb-6">${tag}</li>`;
-    });
-  }
+  project.technologies.forEach((tag) => {
+    tags += `<li class="tag">${tag}</li>`;
+  });
   return tags;
 }
+
+function updateModal(project) {
+  const title = document.querySelector('#modal-title');
+  const img = document.querySelector('#modal-img');
+  const tags = document.querySelector('#modal-tags');
+  const text = document.querySelector('#modal-text');
+  const live = document.querySelector('#modal-live');
+  const source = document.querySelector('#modal-source');
+
+  title.textContent = project.name;
+  img.src = project.image;
+  tags.innerHTML = produceTags(project);
+  text.textContent = project.description;
+  live.href = project.link;
+  source.href = project.source;
+}
+
+window.addEventListener('load', () => {
+  const projectBtns = document.querySelectorAll('[data-id]');
+  for (let i = 0; i < projectBtns.length; i += 1) {
+    projectBtns[i].addEventListener('click', (btn) => {
+      const id = btn.target.getAttribute('data-id');
+      updateModal(findProject(id));
+      document.querySelector('body').style.overflowY = 'hidden';
+      projectModal.classList.toggle('d-hide');
+      projectModal.style.top = `${window.pageYOffset}px`;
+    });
+  }
+});
