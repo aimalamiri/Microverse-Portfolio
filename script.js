@@ -8,6 +8,7 @@ const projectModal = document.querySelector('#project-modal');
 const modalPro = document.querySelector('.modal');
 const modalClose = document.querySelector('#modal-close');
 
+
 const projects = [
   {
     id: 1,
@@ -90,7 +91,6 @@ let fTags = '';
 projects[0].technologies.forEach((tag) => {
   fTags += `<li class="tag">${tag}</li>`;
 });
-console.log(fTags)
 let featureProject = `
           <div class="featured-project">
           <img class="f-project-img" src="${projects[0].image}" alt="GymFit's homepage" />
@@ -166,3 +166,54 @@ modalClose.addEventListener('click', () => {
   projectModal.classList.add('d-hide');
   document.querySelector('body').style.overflowY = 'auto';
 });
+
+window.addEventListener('load', () => {
+  const projectBtns = document.querySelectorAll('[data-id]');
+  for (let i = 0; i < projectBtns.length; i += 1) {
+    projectBtns[i].addEventListener('click', (btn) => {
+      let id = btn.target.getAttribute('data-id');
+      updateModal(findProject(id));
+      document.querySelector('body').style.overflowY = 'hidden';
+      projectModal.classList.toggle('d-hide');
+      projectModal.style.top = window.pageYOffset + 'px';
+    });
+  }
+
+})
+
+function findProject(id){
+
+  for(let project in projects){
+    if(projects[project].id == id){
+      return projects[project];
+    }
+  }
+  return null;
+}
+
+function updateModal(project){
+const Title = document.querySelector('#modal-title');
+const Img = document.querySelector('#modal-img');
+const Tags = document.querySelector('#modal-tags');
+const Text = document.querySelector('#modal-text');
+const Live = document.querySelector('#modal-live');
+const Source = document.querySelector('#modal-source');
+
+Title.textContent= project.name;
+Img.src= project.image;
+Tags.innerHTML = produceTags(project);
+Text.textContent = project.description;
+Live.href= project.link;
+Source.href =project.source;
+  
+}
+
+function produceTags(project){
+  let tags = '';
+  for (let i = 1; i < project.length; i++) {
+    project.technologies.forEach((tag) => {
+      tags += `<li class="tag text-white dark-tag mb-6">${tag}</li>`;
+    });
+  }
+  return tags;
+}

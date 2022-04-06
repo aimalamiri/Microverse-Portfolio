@@ -76,7 +76,7 @@
       <div id="project-modal" class="modal d-hide">
         <div class="modal-content">
           <div class="modal-header">
-            <h3>Multi Post Stories</h3>
+            <h3 id="modal-title">Multi Post Stories</h3>
             <a href="#/" id="modal-close">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#67798E"/>
@@ -84,32 +84,32 @@
             </a>
           </div>
           <div class="modal-body">
-            <ul class="tags">
+            <ul class="tags" id="modal-tags"> 
               <li class="tag">CSS</li>
               <li class="tag">HTML</li>
               <li class="tag">Bootstrap</li>
             </ul>
             <div class="modal-body-content">
               <img
-                class="modal-image"
+                class="modal-image" id="modal-img"
                 src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1102&q=80"
                 alt=""
                 width="100%"
               />
               <div class="modal-body-description">
-                <p class="modal-text">
+                <p class="modal-text" id="modal-text">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                   scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                   into electronic typesetting, remaining essent
                 </p>
                 <div class="modal-caption d-flex mt-24">
-                  <button class="btn d-flex space-between items-center gap-16">
+                  <a href="#" id="modal-live" class="btn d-flex space-between items-center gap-16">
                     See Live <img style="fill: #ccc" src="./assets/svg/see-live.svg" />
-                  </button>
-                  <button class="btn ml-16 d-flex space-between items-center gap-16">
+                  </a>
+                  <a href="#" id="modal-source" class="btn ml-16 d-flex space-between items-center gap-16">
                     See Source <img src="./assets/svg/github.svg" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
