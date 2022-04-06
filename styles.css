@@ -527,11 +527,12 @@ header {
   }
 
   .modal-content {
-    max-height: 636px
+    max-height: 636px;
+    max-width: 1156px;
   }
 
   .modal-image{
-    width: 60%;
+    width: 50%;
     max-height: 60%;
     margin: 0px;
   }
@@ -540,8 +541,9 @@ header {
     display: flex;
     gap: 25px;
     justify-content: space-between;
-    margin-top: 40px;
+    padding: 40px 0;
     overflow-y: auto;
+    padding-bottom: ;
   }
 
   .modal-body-description {
