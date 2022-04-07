@@ -9,7 +9,7 @@ const modalClose = document.querySelector('#modal-close');
 const contactForm = document.querySelector('#contact-form');
 const inputs = document.querySelectorAll('.input-field');
 
-let formData = {
+const formData = {
   name: '',
   email: '',
   message: '',
@@ -221,9 +221,11 @@ window.addEventListener('load', () => {
   }
 
   // Insert Form data from formData object into contact form
-  formData = JSON.parse(localStorage.getItem('formData'));
-  for (let i = 0; i < inputs.length; i += 1) {
-    inputs[i].value = formData[inputs[i].name];
+  let contactFormData = JSON.parse(localStorage.getItem('formData'));
+  if (contactFormData) {
+    for (let i = 0; i < inputs.length; i += 1) {
+      inputs[i].value = contactFormData[inputs[i].name];
+    }
   }
 });
 
@@ -239,13 +241,13 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-function updateFormData(event) {
-  formData[event.target.name] = event.target.value;
+function updateFormData(name, value) {
+  formData[name] = value;
   localStorage.setItem('formData', JSON.stringify(formData));
 }
 
 for (let i = 0; i < inputs.length; i += 1) {
   inputs[i].addEventListener('input', (event) => {
-    updateFormData(event);
+    updateFormData(event.target.name, event.target.value);
   });
 }
