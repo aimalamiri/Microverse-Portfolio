@@ -6,6 +6,7 @@ const seeProjectBtn = document.querySelectorAll('.see-project-btn');
 const works = document.querySelector('#works');
 const projectModal = document.querySelector('#project-modal');
 const modalClose = document.querySelector('#modal-close');
+const contactForm = document.querySelector('#contact-form');
 
 const projects = [
   {
@@ -212,3 +213,11 @@ window.addEventListener('load', () => {
     });
   }
 });
+
+contactForm.addEventListener('submit', (event) => {
+  if (email.value.toLowerCase() !== email.value) {
+    event.preventDefault();
+  } else {
+    emailError.classList.toggle('hide');
+  }
+})
