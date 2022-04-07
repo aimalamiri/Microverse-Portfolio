@@ -225,3 +225,18 @@ contactForm.addEventListener('submit', (event) => {
     emailError.classList.toggle('d-hide');
   }
 });
+
+const inputs = document.querySelectorAll('.input-field');
+
+let formData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+for (let i = 0; i < inputs.length; i += 1) {
+  inputs[i].addEventListener('input', (event) => {
+    formData[event.target.name] = event.target.value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+}
