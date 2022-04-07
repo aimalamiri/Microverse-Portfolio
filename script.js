@@ -215,9 +215,10 @@ window.addEventListener('load', () => {
 });
 
 contactForm.addEventListener('submit', (event) => {
+  const email = document.querySelector('#email');
+  const emailError = document.querySelector('#email-error');
   if (email.value.toLowerCase() !== email.value) {
     event.preventDefault();
-    const emailError = document.querySelector('#email-error');
     emailError.textContent = 'The email must be in lowercase letters';
     emailError.classList.remove('d-hide');
   } else {
