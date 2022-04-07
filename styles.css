@@ -65,7 +65,7 @@ header {
   display: flex;
   background-repeat: no-repeat;
   background-position: bottom right -110px;
-  background-image: url("./assets/png/header-illustration.png");
+  background-image: url('./assets/png/header-illustration.png');
 }
 
 .header-content {
@@ -142,7 +142,6 @@ header {
   width: 100%;
   height: calc(386px - 50px);
   background: #888;
-  background-image: url("./assets/png/art\ printing.png");
   background-position: top left;
   background-size: cover;
   background-blend-mode: darken;
@@ -167,7 +166,7 @@ header {
   width: 100%;
   padding-top: 120px;
   padding-bottom: 209px;
-  background-image: url("assets/png/illustration-about-me.png");
+  background-image: url('assets/png/illustration-about-me.png');
   background-repeat: no-repeat;
   background-size: 493px 258px;
   background-position: bottom right -305px;
@@ -368,6 +367,63 @@ header {
   background: rgba(255, 255, 255, 0.24);
 }
 
+.modal::before {
+  content: '';
+  vertical-align: middle;
+}
+
+.modal {
+  background-color: rgba(60, 60, 60, 0.24);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  z-index: 20;
+  padding: 60px 16px;
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 24px 24px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+  max-height: 90vh;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto, sans-serif;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  min-height: 82px;
+  margin-bottom: 12px;
+}
+
+.modal-image {
+  margin: 24px 0;
+  width: 100%;
+}
+
+.modal-body p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.modal-caption {
+  justify-content: space-between;
+}
+
+.modal-caption .btn {
+  height: 48px;
+}
+
 .container {
   padding-left: 24px;
   padding-right: 24px;
@@ -461,6 +517,39 @@ header {
     top: 351px;
     position: absolute;
     flex-direction: column;
+  }
+
+  .modal {
+    padding: 40px 142px;
+  }
+
+  .modal-content {
+    max-height: 636px;
+    max-width: 1156px;
+  }
+
+  .modal-image {
+    width: 50%;
+    max-height: 60%;
+    margin: 0;
+  }
+
+  .modal-body-content {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 40px 0;
+    overflow-y: auto;
+  }
+
+  .modal-body-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .modal-caption {
+    justify-content: flex-start;
   }
 
   .project-description {
@@ -654,7 +743,7 @@ header {
 }
 
 .font-crete-round {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
 }
 
 .w-full {
@@ -673,6 +762,30 @@ header {
   margin-bottom: 6px;
 }
 
+.ml-16 {
+  margin-left: 16px;
+}
+
 .d-block {
   display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-hide {
+  display: none;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-16 {
+  gap: 16px;
 }

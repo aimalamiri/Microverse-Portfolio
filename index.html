@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aimal Amiri's Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
@@ -31,7 +31,9 @@
           </a>
         </li>
       </ul>
-      <a href="#" class="navbar-menu-button" id="menu-btn"><img src="./assets/svg/menu.svg" id="menu-icon" alt="Menu" /></a>
+      <a href="#" class="navbar-menu-button" id="menu-btn"
+        ><img src="./assets/svg/menu.svg" id="menu-icon" alt="Menu"
+      /></a>
     </nav>
     <header class="header">
       <section class="header-content container">
@@ -71,131 +73,55 @@
       </section>
     </header>
     <main>
+      <div id="project-modal" class="modal d-hide">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="modal-title">Multi Post Stories</h3>
+            <a href="#" id="modal-close">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                  fill="#67798E"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="modal-body">
+            <ul class="tags" id="modal-tags">
+              <li class="tag">CSS</li>
+              <li class="tag">HTML</li>
+              <li class="tag">Bootstrap</li>
+            </ul>
+            <div class="modal-body-content">
+              <img class="modal-image" id="modal-img" src="#" alt="" />
+              <div class="modal-body-description">
+                <p class="modal-text" id="modal-text">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essent
+                </p>
+                <div class="modal-caption d-flex mt-24">
+                  <a href="#" id="modal-live" class="btn d-flex space-between decoration-none items-center gap-16">
+                    See Live <img alt="" src="./assets/svg/see-live.svg" />
+                  </a>
+                  <a href="#" id="modal-source" class="btn ml-16 d-flex space-between decoration-none items-center gap-16">
+                    See Source <img alt="" src="./assets/svg/github.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="works container" id="works">
         <div class="works-title-section">
           <h2 class="works-title text-black font-crete-round">My Recent Works</h2>
           <div>
             <hr />
           </div>
-        </div>
-        <div class="featured-project">
-          <img class="f-project-img" src="./assets/png/gimfit.png" alt="GymFit's homepage" />
-          <div class="f-project-body">
-            <h3 class="project-title text-black font-crete-round my-24">Multi-Post Stories</h3>
-            <p class="project-description font-inter text-black">
-              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-            <ul class="tags">
-              <li class="tag">CSS</li>
-              <li class="tag">HTML</li>
-              <li class="tag">Bootstrap</li>
-              <li class="tag">Ruby</li>
-            </ul>
-            <button class="btn mt-12">See Project</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project">
-            <div>
-              <h3 class="project-title text-white font-crete-round">Profesional Art Printing Data</h3>
-              <p class="project-description text-white mt-12">
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's standard
-              </p>
-              <ul class="tags">
-                <li class="tag text-white dark-tag mb-6">HTML</li>
-                <li class="tag text-white dark-tag mb-6">Bootstrap</li>
-                <li class="tag text-white dark-tag mb-6">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="btn w-full">See Project</button>
-        </div>
-        <div class="project-card">
-          <div class="project">
-            <div>
-              <h3 class="project-title text-white font-crete-round">Profesional Art Printing Data</h3>
-              <p class="project-description text-white mt-12">
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's standard
-              </p>
-              <ul class="tags">
-                <li class="tag text-white dark-tag mb-6">HTML</li>
-                <li class="tag text-white dark-tag mb-6">Bootstrap</li>
-                <li class="tag text-white dark-tag mb-6">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="btn w-full">See Project</button>
-        </div>
-        <div class="project-card">
-          <div class="project">
-            <div>
-              <h3 class="project-title text-white font-crete-round">Profesional Art Printing Data</h3>
-              <p class="project-description text-white mt-12">
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's standard
-              </p>
-              <ul class="tags">
-                <li class="tag text-white dark-tag mb-6">HTML</li>
-                <li class="tag text-white dark-tag mb-6">Bootstrap</li>
-                <li class="tag text-white dark-tag mb-6">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="btn w-full">See Project</button>
-        </div>
-        <div class="project-card">
-          <div class="project">
-            <div>
-              <h3 class="project-title text-white font-crete-round">Profesional Art Printing Data</h3>
-              <p class="project-description text-white mt-12">
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's standard
-              </p>
-              <ul class="tags">
-                <li class="tag text-white dark-tag mb-6">HTML</li>
-                <li class="tag text-white dark-tag mb-6">Bootstrap</li>
-                <li class="tag text-white dark-tag mb-6">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="btn w-full">See Project</button>
-        </div>
-        <div class="project-card">
-          <div class="project">
-            <div>
-              <h3 class="project-title text-white font-crete-round">Profesional Art Printing Data</h3>
-              <p class="project-description text-white mt-12">
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's standard
-              </p>
-              <ul class="tags">
-                <li class="tag text-white dark-tag mb-6">HTML</li>
-                <li class="tag text-white dark-tag mb-6">Bootstrap</li>
-                <li class="tag text-white dark-tag mb-6">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="btn w-full">See Project</button>
-        </div>
-        <div class="project-card">
-          <div class="project">
-            <div>
-              <h3 class="project-title text-white font-crete-round">Profesional Art Printing Data</h3>
-              <p class="project-description text-white mt-12">
-                A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                industry's standard
-              </p>
-              <ul class="tags">
-                <li class="tag text-white dark-tag mb-6">HTML</li>
-                <li class="tag text-white dark-tag mb-6">Bootstrap</li>
-                <li class="tag text-white dark-tag mb-6">Ruby</li>
-              </ul>
-            </div>
-          </div>
-          <button class="btn w-full">See Project</button>
         </div>
       </section>
       <section class="about" id="about">
