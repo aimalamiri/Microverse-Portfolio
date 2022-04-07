@@ -221,7 +221,7 @@ window.addEventListener('load', () => {
   }
 
   // Insert Form data from formData object into contact form
-  let contactFormData = JSON.parse(localStorage.getItem('formData'));
+  const contactFormData = JSON.parse(localStorage.getItem('formData'));
   if (contactFormData) {
     for (let i = 0; i < inputs.length; i += 1) {
       inputs[i].value = contactFormData[inputs[i].name];
