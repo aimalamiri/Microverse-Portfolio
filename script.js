@@ -7,6 +7,13 @@ const works = document.querySelector('#works');
 const projectModal = document.querySelector('#project-modal');
 const modalClose = document.querySelector('#modal-close');
 const contactForm = document.querySelector('#contact-form');
+const inputs = document.querySelectorAll('.input-field');
+
+const formData = {
+  name: '',
+  email: '',
+  message: '',
+};
 
 const projects = [
   {
@@ -212,6 +219,14 @@ window.addEventListener('load', () => {
       projectModal.style.top = `${window.pageYOffset}px`;
     });
   }
+
+  // Insert Form data from formData object into contact form
+  const contactFormData = JSON.parse(localStorage.getItem('formData'));
+  if (contactFormData) {
+    for (let i = 0; i < inputs.length; i += 1) {
+      inputs[i].value = contactFormData[inputs[i].name];
+    }
+  }
 });
 
 contactForm.addEventListener('submit', (event) => {
@@ -225,3 +240,14 @@ contactForm.addEventListener('submit', (event) => {
     emailError.classList.toggle('d-hide');
   }
 });
+
+function updateFormData(name, value) {
+  formData[name] = value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+for (let i = 0; i < inputs.length; i += 1) {
+  inputs[i].addEventListener('input', (event) => {
+    updateFormData(event.target.name, event.target.value);
+  });
+}
