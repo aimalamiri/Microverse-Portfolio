@@ -6,6 +6,7 @@ const seeProjectBtn = document.querySelectorAll('.see-project-btn');
 const works = document.querySelector('#works');
 const projectModal = document.querySelector('#project-modal');
 const modalClose = document.querySelector('#modal-close');
+const contactForm = document.querySelector('#contact-form');
 
 const projects = [
   {
@@ -210,5 +211,17 @@ window.addEventListener('load', () => {
       projectModal.classList.toggle('d-hide');
       projectModal.style.top = `${window.pageYOffset}px`;
     });
+  }
+});
+
+contactForm.addEventListener('submit', (event) => {
+  const email = document.querySelector('#email');
+  const emailError = document.querySelector('#email-error');
+  if (email.value.toLowerCase() !== email.value) {
+    event.preventDefault();
+    emailError.textContent = 'The email must be in lowercase letters';
+    emailError.classList.remove('d-hide');
+  } else {
+    emailError.classList.toggle('d-hide');
   }
 });
