@@ -239,9 +239,13 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
+function updateFormData(event) {
+  formData[event.target.name] = event.target.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
 for (let i = 0; i < inputs.length; i += 1) {
   inputs[i].addEventListener('input', (event) => {
-    formData[event.target.name] = event.target.value;
-    localStorage.setItem('formData', JSON.stringify(formData));
+    updateFormData(event);
   });
 }
