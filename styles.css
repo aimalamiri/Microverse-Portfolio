@@ -387,6 +387,8 @@ header {
   background-color: #fff;
   padding: 24px 24px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+  max-height: 90vh;
 }
 
 .modal-header {
